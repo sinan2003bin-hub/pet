@@ -1,0 +1,28 @@
+<h1>
+    <center>Pet Dashboard</center>
+</h1>
+
+{% for pet in pets %}
+
+<div>
+
+    <h3>{{ pet.username }}</h3>
+
+    <p>Name: {{ pet.name }}</p>
+
+    <p>Color: {{ pet.color }}</p>
+
+    <p>Behavior: {{ pet.behavior }}</p>
+    
+    <p>Breed: {{ pet.breed }}</p>
+
+
+</div>
+
+<hr>
+
+{% empty %}
+
+<p>No pets added yet 😿</p>
+
+{% endfor %}

@@ -1,0 +1,63 @@
+<h2>Pet Preferences</h2>
+<form method="post">
+    {% csrf_token %}
+    <label>Username:</label>
+    <input type="text" name="username" placeholder="Enter your name"><br>
+    <label>Pet Name:</label>
+    <input type="text" name="name" placeholder="Enter your pet's name"><br>
+
+    <label>Color:</label>
+
+    <input type="radio" name="color" value="black">
+    <label>Black</label>
+    <input type="radio" name="color" value="white">
+    <label>White</label>
+    <input type="radio" name="color" value="orange">
+    <label>Orange</label>
+    <input type="radio" name="color" value="black&white">
+    <label>Black & White</label>
+    <input type="radio" name="color" value="combined">
+    <label>Combined</label>
+    <input type="radio" name="color" value="other">
+    <label>Other</label>
+
+    <label>Behavior:</label>
+
+    <input type="checkbox" name="behavior" value="cute">
+    <label>Cute</label>
+    <input type="checkbox" name="behavior" value="funny">
+    <label>Funny</label>
+    <input type="checkbox" name="behavior" value="playful">
+    <label>Playful</label>
+    <input type="checkbox" name="behavior" value="calm">
+    <label>Calm</label>
+    <input type="checkbox" name="behavior" value="silly">
+    <label>Silly</label>
+
+    <label>Breed:</label>
+
+    <select name="breed">
+
+        <option value="select" disabled selected>Select</option>
+
+        <option value="British Shorthair">British Shorthair</option>
+
+        <option value="Siamese">Siamese</option>
+
+        <option value="Parsian">Parsian</option>
+
+        <option value="Ragdoll">Ragdoll</option>
+
+        <option value="Russian Blue">Russian Blue</option>
+
+        <option value="Bengal">Bengal</option>
+        
+    </select>
+
+
+
+
+
+    <button type="submit">Submit</button>  
+    <button type="clear">Clear</button>            
+</form>
