@@ -1,10 +1,32 @@
-<h2>Pet Preferences</h2>
+<style>
+    div{
+        background-color: rgb(244, 255, 236);
+        padding: 5px 20px;
+        border-radius: 10px;
+        width: 70%;
+        margin: auto;
+    }
+    .submit{
+    background-color: green;
+    color:aliceblue;
+    border-color:green;
+    }
+
+    .clear{
+    background-color: red; 
+    color: white;
+    border-color:red;
+    }
+</style>
+
+<div>
+<h2><center>Pet Preferences</center></h2>
 <form method="post">
     {% csrf_token %}
     <label>Username:</label>
-    <input type="text" name="username" placeholder="Enter your name"><br>
+    <input type="text" name="username" placeholder="Enter your name"><br><br>
     <label>Pet Name:</label>
-    <input type="text" name="name" placeholder="Enter your pet's name"><br>
+    <input type="text" name="name" placeholder="Enter your pet's name"><br><br>
 
     <label>Color:</label>
 
@@ -19,7 +41,7 @@
     <input type="radio" name="color" value="combined">
     <label>Combined</label>
     <input type="radio" name="color" value="other">
-    <label>Other</label>
+    <label>Other</label><br><br>
 
     <label>Behavior:</label>
 
@@ -32,7 +54,7 @@
     <input type="checkbox" name="behavior" value="calm">
     <label>Calm</label>
     <input type="checkbox" name="behavior" value="silly">
-    <label>Silly</label>
+    <label>Silly</label><br><br>
 
     <label>Breed:</label>
 
@@ -52,12 +74,14 @@
 
         <option value="Bengal">Bengal</option>
         
-    </select>
+    </select><br><br>
 
 
 
 
 
-    <button type="submit">Submit</button>  
-    <button type="clear">Clear</button>            
+    <button type="submit" class="submit">Submit</button>  
+    <button type="clear" class="clear">Clear</button>            
 </form>
+
+</div>

@@ -17,7 +17,7 @@ def home(request):
             color=color,
             behavior=behavior,
             breed=breed,
-)
+            )
 
         return redirect('home')
     
@@ -38,4 +38,4 @@ def dashboard(request):
         'pets': pets,
         'action': action
     })
-# Create your views here.
+
